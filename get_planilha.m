@@ -7,7 +7,7 @@ function [dados_num, texto] = get_planilha()
 
   pkg load io
 
-  [fname, fpath] = uigetfile(".xlsx", "Escolha o arquivo onde estao os dados")
+  [fname, fpath] = uigetfile(".xlsx", "Escolha o arquivo onde estao os dados");
 
   if fname == 0
     exit(1);
