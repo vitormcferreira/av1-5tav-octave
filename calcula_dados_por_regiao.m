@@ -22,7 +22,8 @@ function dados_por_regiao = calcula_dados_por_regiao(dados_por_estado, texto)
     totalmente_por_estado = dados_estados_regiao(:, 3);
     parcialmente_por_estado = dados_estados_regiao(:, 4);
 
-    dados_regiao = sum([total_pop_por_estado, nao_imunizada_por_estado, totalmente_por_estado, parcialmente_por_estado])
+    dados_regiao = sum(
+    [total_pop_por_estado nao_imunizada_por_estado totalmente_por_estado parcialmente_por_estado]);
 
     dados_por_regiao = [dados_por_regiao; dados_regiao];
   endfor
