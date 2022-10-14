@@ -17,7 +17,13 @@ function dados_por_regiao = calcula_dados_por_regiao(dados_por_estado, texto)
     i_estados = get_indexes_estados_por_regiao(texto, regiao);
     dados_estados_regiao = dados_por_estado(i_estados, :);
 
-    dados_regiao = sum(dados_estados_regiao);
+    total_pop_por_estado = dados_estados_regiao(:, 1);
+    nao_imunizada_por_estado = dados_estados_regiao(:, 2);
+    totalmente_por_estado = dados_estados_regiao(:, 3);
+    parcialmente_por_estado = dados_estados_regiao(:, 4);
+
+    dados_regiao = sum([total_pop_por_estado, nao_imunizada_por_estado, totalmente_por_estado, parcialmente_por_estado])
+
     dados_por_regiao = [dados_por_regiao; dados_regiao];
   endfor
 
