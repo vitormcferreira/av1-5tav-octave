@@ -5,5 +5,5 @@ function av1()
 
   dados_por_regiao = calcula_dados_por_regiao(dados_por_estado, texto);
 
-  % plota_grafico(dados_por_estado, dados_por_regiao);
+  dados_porc_por_regiao = calcula_dados_porc_por_regiao(dados_por_regiao);
 endfunction
