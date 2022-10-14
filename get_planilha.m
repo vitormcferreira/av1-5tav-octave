@@ -9,10 +9,8 @@ function [dados_num, texto] = get_planilha()
 
   [fname, fpath] = uigetfile(".xlsx", "Escolha o arquivo onde estao os dados");
 
-  if fname == 0
-    exit(1);
+  if fname != 0
+    [dados_num, texto] = xlsread([fpath fname], "Por estado", "A1:H29");
   endif
-
-  [dados_num, texto] = xlsread([fpath fname], "Por estado", "A1:H29");
 
 endfunction
