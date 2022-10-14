@@ -2,10 +2,10 @@ function [porc_por_regiao] = calcula_dados_porc_por_regiao(dados_por_regiao)
   % Calcula as porcentagens dos dados para cada região.
   %
   % Entrada:
-  %   dados_por_regiao: saída da função calcula_dados_por_regiao
+  %   dados_por_regiao: saída da função calcula_dados_por_regiao.
   %
   % Saída:
-  %   por_por_regiao: dados percentuais para cada região no formato:
+  %   porc_por_regiao: dados percentuais para cada região no formato:
   % [totalmente_imunizadas_perc parcialmente_imunizadas_perc nao_imunizadas_perc]
 
   pop_total = dados_por_regiao(:, 1);

@@ -1,15 +1,14 @@
-function dados_por_regiao = calcula_dados_por_regiao(dados_por_estado, texto)
+function [dados_por_regiao] = calcula_dados_por_regiao(regioes, dados_por_estado, texto)
   % Calcula os dados para cada região.
   %
   % Entrada:
+  %   regioes: regiões do Bostil.
   %   dados_por_estado: retorno da função calcula_dados_por_estado.
   %   texto: os dados de texto da planilha.
   %
   % Saída:
   %   dados_por_regiao: os dados para cada região no formato:
   % [sul sudeste centro_oeste nordeste norte].
-
-  regioes = {"Sul", "Sudeste", "Centro Oeste", "Nordeste", "Norte"};
 
   dados_por_regiao = [];
 
