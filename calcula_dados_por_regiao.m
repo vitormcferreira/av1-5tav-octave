@@ -2,7 +2,7 @@ function dados_por_regiao = calcula_dados_por_regiao(dados_por_estado, texto)
   % Calcula os dados para cada região.
   %
   % Entrada:
-  %   dados_por_estado: retorno da função get_dados_por_estado.
+  %   dados_por_estado: retorno da função calcula_dados_por_estado.
   %   texto: os dados de texto da planilha.
   %
   % Saída:
